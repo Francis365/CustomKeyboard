@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{53317FF8-5CE6-4807-802B-70B99F612F7E}</ProjectGuid>
+    <ProjectTypeGuids>{EE2C853D-36AF-4FDB-B1AD-8E90477E2198};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ChatPay</RootNamespace>
+    <AssemblyName>ChatPay</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>61582</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>36402</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="NativeExtension\Assets.car" />
+    <None Include="NativeExtension\ChatPay" />
+    <None Include="NativeExtension\embedded.mobileprovision" />
+    <None Include="NativeExtension\Info.plist" />
+    <None Include="NativeExtension\_CodeSignature\CodeResources" />
+    <None Include="NativeExtension\ChatPay.storyboardc\AirtimeAmountViewController.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\UIViewController-bMG-Jr-46J.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\u2b-aq-71P-view-6vY-bI-tsq.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\oe1-eY-8ys-view-ngT-OR-uPU.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\Q9K-HF-zET-view-Nw5-EO-iy3.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\gVu-GX-ckF-view-DwF-KC-MZr.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\AirtimeNumberViewController.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\xLw-WF-Vx6-view-uq7-Eq-ZYm.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\bMG-Jr-46J-view-28e-lJ-N5T.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\transaction.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\Y6W-OH-hqX-view-5EZ-qb-Rvc.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\Fi5-m7-kGZ-view-QIo-91-RcA.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\wtP-4n-zTB-view-ygj-tj-4Hg.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\UIViewController-gVu-GX-ckF.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\UIViewController-tIs-dq-Dzx.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\selectNetwork.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\start.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\DJv-Tb-P9F-view-iwP-wy-8Oj.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\mr4-If-amU-view-5iD-8a-gKp.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\a0A-FG-LOi-view-3es-bC-sXj.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\UIViewController-Q9K-HF-zET.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\TransactionStatus.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\SterlToSterlAccountSelect.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\transferType.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\tIs-dq-Dzx-view-zdG-Kp-xbY.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\nzA-aS-QyK-view-Bzq-ae-2HC.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\SterlToSterlPin.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\Info.plist" />
+    <None Include="NativeExtension\ChatPay.storyboardc\UIViewController-xLw-WF-Vx6.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\Rkj-fE-PID-view-vvB-5Y-b9q.nib" />
+    <None Include="NativeExtension\ChatPay.storyboardc\UIViewController-Fi5-m7-kGZ.nib" />
+    <None Include="NativeExtension\Frameworks\Pods_ChatPay.framework\Pods_ChatPay" />
+    <None Include="NativeExtension\Frameworks\Pods_ChatPay.framework\Info.plist" />
+    <None Include="NativeExtension\Frameworks\Pods_ChatPay.framework\_CodeSignature\CodeResources" />
+    <None Include="NativeExtension\Frameworks\Pods_ChatPay.framework\_CodeSignature\CodeDirectory" />
+    <None Include="NativeExtension\Frameworks\Pods_ChatPay.framework\_CodeSignature\CodeRequirements-1" />
+    <None Include="NativeExtension\Frameworks\Pods_ChatPay.framework\_CodeSignature\CodeSignature" />
+    <None Include="NativeExtension\Frameworks\Pods_ChatPay.framework\_CodeSignature\CodeRequirements" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KeyboardViewController.cs" />
+    <Compile Include="KeyboardViewController.designer.cs">
+      <DependentUpon>KeyboardViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NativeExtension\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.AppExtension.CSharp.targets" />
+
+  <Target Name="BeforeCodeSign">
+    <ItemGroup>
+        <NativeExtensionDirectory Include="NativeExtension\**\*.*" />
+    </ItemGroup>
+
+    <!-- cleanup the application extension built with Xamarin (too heavy in memory)-->
+    <RemoveDir SessionId="$(BuildSessionId)"
+               Directories="bin\iPhoneSimulator\Debug\ChatPay.appex"/>
+
+    <!-- copy the native one, built in obj-c -->
+    <Copy
+            SessionId="$(BuildSessionId)"
+            SourceFiles="@(NativeExtensionDirectory)"
+            DestinationFolder="bin\iPhoneSimulator\Debug\ChatPay.appex"
+            SkipUnchangedFiles="true"
+            OverwriteReadOnlyFiles="true"
+            Retries="3"
+            RetryDelayMilliseconds="300"/>
+</Target>
+</Project>

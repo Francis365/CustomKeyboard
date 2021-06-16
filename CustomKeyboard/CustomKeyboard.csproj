@@ -48,6 +48,7 @@
         <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
         <CodesignKey>iPhone Developer</CodesignKey>
         <MtouchDebug>true</MtouchDebug>
+        <MtouchLink>SdkOnly</MtouchLink>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
         <DebugType>none</DebugType>
@@ -58,6 +59,7 @@
         <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
         <MtouchArch>ARM64</MtouchArch>
         <CodesignKey>iPhone Developer</CodesignKey>
+        <MtouchLink>SdkOnly</MtouchLink>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
@@ -138,7 +140,7 @@
     <ItemGroup>
       <ProjectReference Include="..\ChatPay\ChatPay.csproj">
         <IsAppExtension>true</IsAppExtension>
-        <Project>{2E775FAE-C3BF-42A4-865A-9AEB571F8061}</Project>
+        <Project>{53317FF8-5CE6-4807-802B-70B99F612F7E}</Project>
         <Name>ChatPay</Name>
       </ProjectReference>
     </ItemGroup>
